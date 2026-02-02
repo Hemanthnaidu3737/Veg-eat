@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="VeG-eaT promotes healthy, plant-based soya milk products in India." />
+  <title>VeG-eaT | Pure Soya Milk Products</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+
+  <!-- Header / Navbar -->
+  <header class="navbar">
+    <div class="logo">VeG-eaT</div>
+    <nav>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero">
+      <h1>Pure Plant Power 🥛</h1>
+      <p>Healthy • Ethical • 100% Soya Based Nutrition</p>
+      <button type="button">Explore Products</button>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+      <h2>Our Soya Milk Products</h2>
+
+      <div class="product-grid">
+        <div class="card">
+          <h3>Classic Soya Milk</h3>
+          <p>Rich in protein, lactose-free</p>
+          <span>₹60 / 1L</span>
+        </div>
+
+        <div class="card">
+          <h3>Vanilla Soya Milk</h3>
+          <p>Naturally flavored, no added sugar</p>
+          <span>₹75 / 1L</span>
+        </div>
+
+        <div class="card">
+          <h3>Chocolate Soya Milk</h3>
+          <p>Healthy & delicious energy drink</p>
+          <span>₹80 / 1L</span>
+        </div>
+
+        <div class="card">
+          <h3>Soya Curd</h3>
+          <p>Plant-based probiotic alternative</p>
+          <span>₹50 / 500g</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <h2>Why VeG-eaT?</h2>
+      <p>
+        VeG-eaT promotes sustainable, cruelty-free nutrition through
+        premium soya-based dairy alternatives.
+        <strong>Eat Clean. Live Green.</strong>
+      </p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <p>© 2026 VeG-eaT | Plant-Based Nutrition for India 🇮🇳</p>
+  </footer>
+
+</body>
+</html>
