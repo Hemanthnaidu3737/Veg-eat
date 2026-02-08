@@ -1,81 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="VeG-eaT promotes healthy, plant-based soya milk products in India." />
-  <title>VeG-eaT | Pure Soya Milk Products</title>
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="./style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VeG-eaT | Premium Soya Dairy</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
 <body>
 
-  <!-- Header / Navbar -->
-  <header class="navbar">
-    <div class="logo">VeG-eaT</div>
-    <nav>
-      <a href="#products">Products</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="logo">VeG-eaT <span class="dot">.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#shop">Shop Soya</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+        </ul>
+        <div class="nav-icons">
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#"><i class="fas fa-shopping-bag"></i> <span class="cart-count">2</span></a>
+        </div>
     </nav>
-  </header>
 
-  <!-- Hero Section -->
-  <main>
-    <section class="hero">
-      <h1>Pure Plant Power 🥛</h1>
-      <p>Healthy • Ethical • 100% Soya Based Nutrition</p>
-      <button type="button">Explore Products</button>
+    <!-- Hero Section -->
+    <header id="home">
+        <div class="hero-text">
+            <h4>100% Plant-Based Nutrition</h4>
+            <h1>The Purest <span class="txt-gradient">Soya Milk</span> <br>In India</h1>
+            <p>Creamy, protein-packed, and dairy-free. Sourced from organic Indian farms.</p>
+            <div class="hero-btns">
+                <a href="#shop" class="btn-primary">Shop Now</a>
+                <a href="#benefits" class="btn-secondary">Learn More</a>
+            </div>
+        </div>
+        <div class="hero-img">
+            <!-- Aesthetic Soya Milk Image -->
+            <img src="https://images.unsplash.com/photo-1600788886242-5c96aabe3757?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Soya Milk Bottle">
+        </div>
+    </header>
+
+    <!-- Product Shop Section -->
+    <section id="shop" class="container">
+        <h2 class="section-heading">Our Best Sellers</h2>
+        <div class="product-grid">
+            
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="badge">Bestseller</div>
+                <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Classic Soya Milk">
+                <div class="p-details">
+                    <h3>Classic Soya Milk (1L)</h3>
+                    <p>Unsweetened, rich in protein.</p>
+                    <div class="price-row">
+                        <span class="price">₹120</span>
+                        <button class="btn-cart"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1559563362-c667ba5f5480?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Chocolate Soya">
+                <div class="p-details">
+                    <h3>Dark Chocolate Soya</h3>
+                    <p>Indulgent cocoa blend.</p>
+                    <div class="price-row">
+                        <span class="price">₹145</span>
+                        <button class="btn-cart"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="https://plus.unsplash.com/premium_photo-1675237626068-de4665cc6d36?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Soya Curd">
+                <div class="p-details">
+                    <h3>Organic Tofu (200g)</h3>
+                    <p>Firm texture for curries.</p>
+                    <div class="price-row">
+                        <span class="price">₹95</span>
+                        <button class="btn-cart"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1627485937980-221c88ac04f9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Vanilla Soya">
+                <div class="p-details">
+                    <h3>Vanilla Bean Soya</h3>
+                    <p>Sweet aromatic flavor.</p>
+                    <div class="price-row">
+                        <span class="price">₹140</span>
+                        <button class="btn-cart"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </section>
 
-    <!-- Products Section -->
-    <section id="products" class="products">
-      <h2>Our Soya Milk Products</h2>
-
-      <div class="product-grid">
-        <div class="card">
-          <h3>Classic Soya Milk</h3>
-          <p>Rich in protein, lactose-free</p>
-          <span>₹60 / 1L</span>
+    <!-- Benefits Section -->
+    <section id="benefits">
+        <div class="benefit-box">
+            <i class="fas fa-leaf"></i>
+            <h3>100% Vegan</h3>
+            <p>No animal products used.</p>
         </div>
-
-        <div class="card">
-          <h3>Vanilla Soya Milk</h3>
-          <p>Naturally flavored, no added sugar</p>
-          <span>₹75 / 1L</span>
+        <div class="benefit-box">
+            <i class="fas fa-flag-usa" style="display:none;"></i> <!-- Hidden -->
+            <i class="fas fa-globe-asia"></i>
+            <h3>Indian Origin</h3>
+            <p>Made from MP Soya beans.</p>
         </div>
-
-        <div class="card">
-          <h3>Chocolate Soya Milk</h3>
-          <p>Healthy & delicious energy drink</p>
-          <span>₹80 / 1L</span>
+        <div class="benefit-box">
+            <i class="fas fa-heartbeat"></i>
+            <h3>Zero Cholesterol</h3>
+            <p>Healthy heart, happy life.</p>
         </div>
-
-        <div class="card">
-          <h3>Soya Curd</h3>
-          <p>Plant-based probiotic alternative</p>
-          <span>₹50 / 500g</span>
-        </div>
-      </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-      <h2>Why VeG-eaT?</h2>
-      <p>
-        VeG-eaT promotes sustainable, cruelty-free nutrition through
-        premium soya-based dairy alternatives.
-        <strong>Eat Clean. Live Green.</strong>
-      </p>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer id="contact">
-    <p>© 2026 VeG-eaT | Plant-Based Nutrition for India 🇮🇳</p>
-  </footer>
+    <footer>
+        <p>&copy; 2024 VeG-eaT India. Made for Demo.</p>
+    </footer>
 
 </body>
 </html>
