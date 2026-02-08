@@ -1,265 +1,135 @@
-/* --- VARIABLES & RESET --- */
-:root {
-    --green-accent: #00b894;
-    --blue-accent: #0984e3;
-    /* Soft Gradient Background */
-    --bg-body: linear-gradient(to bottom right, #e0f7fa, #e8f5e9);
-    --text-dark: #2d3436;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VeG-eaT | Premium Soya Dairy</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-}
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="logo">VeG-eaT <span class="dot">.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#shop">Shop Soya</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+        </ul>
+        <div class="nav-icons">
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#"><i class="fas fa-shopping-bag"></i> <span class="cart-count">2</span></a>
+        </div>
+    </nav>
 
-body {
-    background: var(--bg-body);
-    color: var(--text-dark);
-}
+    <!-- Hero Section -->
+    <header id="home">
+        <div class="hero-text">
+            <h4>100% Plant-Based Nutrition</h4>
+            <h1>The Purest <span class="txt-gradient">Soya Milk</span> <br>In India</h1>
+            <p>Creamy, protein-packed, and dairy-free. Sourced from organic Indian farms.</p>
+            <div class="hero-btns">
+                <a href="#shop" class="btn-primary">Shop Now</a>
+                <a href="#benefits" class="btn-secondary">Learn More</a>
+            </div>
+        </div>
+        <div class="hero-img">
+            <!-- Fixed Image: Soya Milk Bottle -->
+            <img src="https://images.unsplash.com/photo-1600788886242-5c96aabe3757?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Soya Milk Bottle">
+        </div>
+    </header>
 
-/* --- NAVIGATION --- */
-.glass-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 8%;
-    background: rgba(255, 255, 255, 0.85);
-    backdrop-filter: blur(10px);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-}
+    <!-- Product Shop Section -->
+    <section id="shop" class="container">
+        <h2 class="section-heading">Our Best Sellers</h2>
+        <div class="product-grid">
+            
+            <!-- Product 1: Soya Curd -->
+            <div class="product-card">
+                <div class="badge">Bestseller</div>
+                <!-- Image: Yogurt/Curd Bowl -->
+                <img src="https://images.unsplash.com/photo-1563575314428-21d3f2c52538?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Classic SOYA CURD">
+                <div class="p-details">
+                    <h3>Classic Soya Curd (1L)</h3>
+                    <p>Thick, creamy, dairy-free Dahi.</p>
+                    <div class="price-row">
+                        <span class="price">₹120</span>
+                        <button class="btn-cart"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
 
-.logo {
-    font-size: 24px;
-    font-weight: 700;
-    color: var(--text-dark);
-}
+            <!-- Product 2: Soya Chapatis -->
+            <div class="product-card">
+                <!-- Image: Stack of Rotis -->
+                <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="SOYA CHAPATIS">
+                <div class="p-details">
+                    <h3>Soya Chapatis (Pack of 10)</h3>
+                    <p>High protein soft rotis.</p>
+                    <div class="price-row">
+                        <span class="price">₹145</span>
+                        <button class="btn-cart"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
 
-.dot {
-    color: var(--green-accent);
-    font-size: 40px;
-    line-height: 0;
-}
+            <!-- Product 3: Firm Tofu -->
+            <div class="product-card">
+                <!-- Image: Tofu Block -->
+                <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="FIRM TOFU">
+                <div class="p-details">
+                    <h3>Firm Organic Tofu (200g)</h3>
+                    <p>Perfect texture for curries.</p>
+                    <div class="price-row">
+                        <span class="price">₹95</span>
+                        <button class="btn-cart"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
 
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 30px;
-}
+            <!-- Product 4: Silken Tofu -->
+            <div class="product-card">
+                <!-- Image: Silken Tofu Dish -->
+                <img src="https://images.unsplash.com/photo-1579712267685-42da80f602b0?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="SILKEN TOFU">
+                <div class="p-details">
+                    <h3>Silken Tofu</h3>
+                    <p>Soft texture for smoothies.</p>
+                    <div class="price-row">
+                        <span class="price">₹140</span>
+                        <button class="btn-cart"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
 
-.nav-links a {
-    text-decoration: none;
-    color: var(--text-dark);
-    font-weight: 600;
-    font-size: 14px;
-    text-transform: uppercase;
-    transition: 0.3s;
-}
+        </div>
+    </section>
 
-.nav-links a:hover {
-    color: var(--blue-accent);
-}
+    <!-- Benefits Section -->
+    <section id="benefits">
+        <div class="benefit-box">
+            <i class="fas fa-leaf"></i>
+            <h3>100% Vegan</h3>
+            <p>No animal products used.</p>
+        </div>
+        <div class="benefit-box">
+            <i class="fas fa-globe-asia"></i>
+            <h3>Indian Origin</h3>
+            <p>Made from MP Soya beans.</p>
+        </div>
+        <div class="benefit-box">
+            <i class="fas fa-heartbeat"></i>
+            <h3>Zero Cholesterol</h3>
+            <p>Healthy heart, happy life.</p>
+        </div>
+    </section>
 
-.nav-icons i {
-    margin-left: 20px;
-    font-size: 18px;
-    color: var(--text-dark);
-    cursor: pointer;
-}
+    <footer>
+        <p>&copy; 2026 VeG-eaT India. Made for Demo.</p>
+    </footer>
 
-/* --- HERO SECTION --- */
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 60px 8%;
-    min-height: 85vh;
-}
-
-.hero-text {
-    flex: 1;
-}
-
-.hero-text h4 {
-    color: var(--blue-accent);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
-}
-
-.hero-text h1 {
-    font-size: 3.5rem;
-    line-height: 1.1;
-    margin-bottom: 20px;
-}
-
-.txt-gradient {
-    background: -webkit-linear-gradient(45deg, var(--green-accent), var(--blue-accent));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.hero-btns {
-    margin-top: 30px;
-}
-
-.btn-primary {
-    padding: 12px 30px;
-    background: linear-gradient(to right, var(--green-accent), var(--blue-accent));
-    color: white;
-    text-decoration: none;
-    border-radius: 25px;
-    font-weight: 600;
-    box-shadow: 0 5px 15px rgba(9, 132, 227, 0.3);
-}
-
-.btn-secondary {
-    padding: 12px 30px;
-    color: var(--text-dark);
-    text-decoration: none;
-    font-weight: 600;
-    margin-left: 10px;
-}
-
-.hero-img {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.hero-img img {
-    max-width: 400px;
-    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; /* Aesthetic Organic Shape */
-    box-shadow: 20px 20px 0px rgba(0, 184, 148, 0.1);
-}
-
-/* --- PRODUCT GRID --- */
-.container {
-    padding: 60px 8%;
-}
-
-.section-heading {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 50px;
-    color: var(--text-dark);
-}
-
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 30px;
-}
-
-.product-card {
-    background: #fff;
-    border-radius: 20px;
-    overflow: hidden;
-    position: relative;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-    transition: transform 0.3s ease;
-}
-
-.product-card:hover {
-    transform: translateY(-10px);
-}
-
-.badge {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    background: var(--blue-accent);
-    color: white;
-    padding: 5px 12px;
-    font-size: 11px;
-    border-radius: 20px;
-    text-transform: uppercase;
-    font-weight: bold;
-    z-index: 10;
-}
-
-/* --- IMAGE FIX FOR FIT --- */
-.product-card img {
-    width: 100%;
-    height: 250px;       /* Fixed height */
-    object-fit: cover;   /* Ensures image covers area without stretching */
-    display: block;
-}
-
-.p-details {
-    padding: 20px;
-}
-
-.p-details h3 {
-    font-size: 16px;
-    margin-bottom: 5px;
-    color: #2c3e50;
-}
-
-.p-details p {
-    font-size: 13px;
-    color: #7f8c8d;
-    margin-bottom: 15px;
-}
-
-.price-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.price {
-    font-size: 18px;
-    font-weight: 700;
-    color: var(--green-accent);
-}
-
-.btn-cart {
-    background: #f1f2f6;
-    border: none;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 0.3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.btn-cart:hover {
-    background: var(--green-accent);
-    color: white;
-}
-
-/* --- BENEFITS --- */
-#benefits {
-    display: flex;
-    justify-content: space-around;
-    padding: 60px 8%;
-    background: rgba(255,255,255,0.6);
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.benefit-box {
-    text-align: center;
-}
-
-.benefit-box i {
-    font-size: 32px;
-    color: var(--blue-accent);
-    margin-bottom: 15px;
-}
-
-footer {
-    text-align: center;
-    padding: 25px;
-    background: linear-gradient(to right, var(--green-accent), var(--blue-accent));
-    color: white;
-    font-size: 14px;
-}
+</body>
+</html>
