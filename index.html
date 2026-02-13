@@ -1,223 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VeG-eaT | Plant Powered Living</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-<style>
-:root {
-  --green: #00b894;
-  --blue: #0984e3;
-  --light: #f5fdfc;
-  --dark: #1e272e;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-
-body {
-  background: linear-gradient(135deg, #e0fff7, #e3f2ff);
-  color: var(--dark);
-}
-
-/* NAVBAR */
-nav {
-  backdrop-filter: blur(12px);
-  background: rgba(255,255,255,0.6);
-  display: flex;
-  justify-content: space-between;
-  padding: 15px 50px;
-  position: sticky;
-  top: 0;
-}
-
-.logo {
-  font-size: 22px;
-  font-weight: 700;
-  color: var(--green);
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-  gap: 25px;
-}
-
-nav a {
-  text-decoration: none;
-  color: var(--dark);
-  font-weight: 500;
-}
-
-/* HERO */
-.hero {
-  text-align: center;
-  padding: 80px 20px;
-}
-
-.hero h1 {
-  font-size: 42px;
-  background: linear-gradient(to right, var(--green), var(--blue));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.hero p {
-  margin-top: 15px;
-  font-size: 18px;
-  color: #555;
-}
-
-.btn {
-  margin-top: 25px;
-  padding: 12px 28px;
-  border: none;
-  border-radius: 30px;
-  background: linear-gradient(to right, var(--green), var(--blue));
-  color: white;
-  cursor: pointer;
-  font-weight: 600;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  transform: scale(1.05);
-}
-
-/* PRODUCTS */
-.products {
-  padding: 60px 50px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-}
-
-.card {
-  background: white;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-  transition: 0.4s;
-}
-
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
-}
-
-.card img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-}
-
-.card-content {
-  padding: 20px;
-}
-
-.category {
-  font-size: 12px;
-  text-transform: uppercase;
-  color: var(--blue);
-  font-weight: 600;
-  letter-spacing: 1px;
-}
-
-.card h3 {
-  margin: 8px 0;
-}
-
-.price {
-  color: var(--green);
-  font-weight: 700;
-  margin-bottom: 12px;
-}
-
-.add-btn {
-  padding: 8px 18px;
-  border: none;
-  border-radius: 20px;
-  background: var(--green);
-  color: white;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.add-btn:hover {
-  background: var(--blue);
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 25px;
-  margin-top: 40px;
-  background: linear-gradient(to right, var(--green), var(--blue));
-  color: white;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VeG-eaT | Premium Soya Dairy</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-<nav>
-  <div class="logo">VeG-eaT</div>
-  <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Products</a></li>
-    <li><a href="#">About</a></li>
-  </ul>
-</nav>
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="logo">VeG-eaT <span class="dot">.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#shop">Shop Soya</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+        </ul>
+        <div class="nav-icons">
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#"><i class="fas fa-shopping-bag"></i> <span class="cart-count">2</span></a>
+        </div>
+    </nav>
 
-<section class="hero">
-  <h1>Fresh. Vegan. Delicious.</h1>
-  <p>Premium soya-based alternatives for healthy living 🌿</p>
-  <button class="btn">Shop Now</button>
-</section>
+    <!-- Hero Section -->
+    <header id="home">
+        <div class="hero-text">
+            <h4>100% Plant-Based Nutrition</h4>
+            <h1>The Purest <span class="txt-gradient">Soya Milk</span> <br>In India</h1>
+            <p>Creamy, protein-packed, and dairy-free. Sourced from organic Indian farms.</p>
+            <div class="hero-btns">
+                <a href="#shop" class="btn-primary">Shop Now</a>
+                <a href="#benefits" class="btn-secondary">Learn More</a>
+            </div>
+        </div>
+        <div class="hero-img">
+            <!-- Fixed Image: Soya Milk Bottle -->
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz8lH14qScvykpfWv5wKGKolfCnkckp2gXlajdO7wcvg&s&auto=format&fit=crop&w=800&q=80" alt="Soya Milk Bottle">
+        </div>
+    </header>
 
-<section class="products">
+    <!-- Product Shop Section -->
+    <section id="shop" class="container">
+        <h2 class="section-heading">Our Best Sellers</h2>
+        <div class="product-grid">
+            
+            <!-- Product 1: Soya Curd -->
+            <div class="product-card">
+                <div class="badge">Bestseller</div>
+               <img src="https://media.istockphoto.com/id/176551217/photo/close-up-view-of-organic-soy-yogurt.jpg?s=612x612&w=0&k=20&c=KG2liaqrdN0F0tqNtv6IW2pNOIJF_7T2NCGDk6SPD44=&auto=format&fit=crop&w=500&q=80" alt="Classic SOYA CURD">
+                <div class="p-details">
+                    <h3>Classic Soya Curd (1L)</h3>
+                    <p>Thick, creamy, dairy-free Dahi.</p>
+                    <div class="price-row">
+                        <span class="price">₹120</span>
+                        <button class="btn-cart"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
 
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1604908176997-4313e9b983a4" alt="">
-    <div class="card-content">
-      <span class="category">Dairy Alternative</span>
-      <h3>Soya Milk Classic</h3>
-      <p class="price">₹60</p>
-      <button class="add-btn">Add to Cart</button>
-    </div>
-  </div>
+            <!-- Product 2: Soya Chapatis -->
+            <div class="product-card">
+                <!-- Image: Stack of Rotis -->
+                <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="SOYA CHAPATIS">
+                <div class="p-details">
+                    <h3>Soya Chapatis (Pack of 10)</h3>
+                    <p>High protein soft rotis.</p>
+                    <div class="price-row">
+                        <span class="price">₹145</span>
+                        <button class="btn-cart"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
 
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1590080874088-eec64895b423" alt="">
-    <div class="card-content">
-      <span class="category">Protein Rich</span>
-      <h3>Fresh Tofu Block</h3>
-      <p class="price">₹90</p>
-      <button class="add-btn">Add to Cart</button>
-    </div>
-  </div>
+            <!-- Product 3: Firm Tofu -->
+            <div class="product-card">
+                <!-- Image: Tofu Block -->
+                <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="FIRM TOFU">
+                <div class="p-details">
+                    <h3>Firm Organic Tofu (200g)</h3>
+                    <p>Perfect texture for curries.</p>
+                    <div class="price-row">
+                        <span class="price">₹95</span>
+                        <button class="btn-cart"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
 
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1589308078055-2c7e8b19a79a" alt="">
-    <div class="card-content">
-      <span class="category">Bestseller</span>
-      <h3>Chocolate Soya Milk</h3>
-      <p class="price">₹75</p>
-      <button class="add-btn">Add to Cart</button>
-    </div>
-  </div>
+            <!-- Product 4: Silken Tofu -->
+            <div class="product-card">
+                <!-- Image: Silken Tofu Dish -->
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_Wz8eDWzTPqEqq1W088rJ1pFFQPfSLC1TVg&s&auto=format&fit=crop&w=500&q=80" alt="SILKEN TOFU">
+                <div class="p-details">
+                    <h3>Silken Tofu</h3>
+                    <p>Soft texture for smoothies.</p>
+                    <div class="price-row">
+                        <span class="price">₹140</span>
+                        <button class="btn-cart"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
 
-</section>
+        </div>
+    </section>
 
-<footer>
-  © 2026 VeG-eaT | Plant Powered India 🇮🇳
-</footer>
+    <!-- Benefits Section -->
+    <section id="benefits">
+        <div class="benefit-box">
+            <i class="fas fa-leaf"></i>
+            <h3>100% Vegan</h3>
+            <p>No animal products used.</p>
+        </div>
+        <div class="benefit-box">
+            <i class="fas fa-globe-asia"></i>
+            <h3>Indian Origin</h3>
+            <p>Made from MP Soya beans.</p>
+        </div>
+        <div class="benefit-box">
+            <i class="fas fa-heartbeat"></i>
+            <h3>Zero Cholesterol</h3>
+            <p>Healthy heart, happy life.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 VeG-eaT India. Made for Demo.</p>
+    </footer>
 
 </body>
 </html>
+
+
+
+
+
+
+
